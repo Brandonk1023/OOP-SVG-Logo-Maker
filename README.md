@@ -10,6 +10,8 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
+This project was created to allow for the easy creation of an SVG logo graphic.  This would allow a user to input some informtation and create a quick logo graphic to be used.  In creating this project I was able to learn more about rending an SVG vector graphic, and how JavaScript can be used to creat an application to expedite this process.  I was also able to futher hone my skills in SVG coding and in implementing testing into my coding skillset as well with jest.
+
 ## Table of Contents 
 
 - [Installation](#installation)
