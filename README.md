@@ -23,9 +23,7 @@ To install this application the user will need to run the command "npm i" from t
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To use the application, the user will need to run "node index.js" in the CLI to start the application.  Once the user has run this command, the user will be presented with a couple of question within the CLI that will help the application build the logo.  The user will first select the logo shape that is needed.  Once the Shape has been selected the user will then be prompted to enter in the text that is needed for the logo.  Once these questions have been answered the application will generate an SVG logo file for the user, using the criteria provided by the user.
 
 ![alt text](assets/images/screenshot.png)
 
