@@ -4,22 +4,9 @@ const shapes = require('lib/shapes.js')
 
 const questions = [
     {
-        type: 'list',
-        name: 'shape',
-        message: 'Please select shape.',
-        choices: ['circle', 'square', 'triangle'],
-    },
-
-    {
-        type: 'input',
-        name: 'shapeColor',
-        message: 'Please enter in the fill color name. Hex code can be entered in place of color name.',
-    },
-
-    {
         type: 'input',
         name: 'text',
-        message: 'Please enter text needed for logo, of no text please leave blank.'
+        message: 'Please enter up to 3 characters for the text.'
     },
 
     {
@@ -27,4 +14,18 @@ const questions = [
         name: 'textColor',
         message: 'Please enter in fill color name. Hex code can be entered in place of color name',
     },
+
+    {
+        type: 'list',
+        name: 'shape',
+        message: 'Please select shape.',
+        choices: ['circle', 'triangle','square'],
+    },
+
+    {
+        type: 'input',
+        name: 'shapeColor',
+        message: 'Please enter in a color keyword. Hexadecimal can be used as well.',
+    },
+
 ]

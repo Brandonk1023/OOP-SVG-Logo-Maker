@@ -34,6 +34,9 @@ To use the application, the user will need to run "node index.js" in the CLI to 
 MDN Web Docs Documentation for SVG:
 https://developer.mozilla.org/en-US/docs/Web/SVG
 
+Inquirer List Documentation:
+https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
+
 
 ## License
 
