@@ -7,13 +7,20 @@ inquirer
     {
         type: 'input',
         name: 'text',
-        message: 'Please enter up to 3 characters for the text.'
+        message: 'Please enter up to 3 characters for the text.',
+        validate: function(input) {
+            if(input.length > 3) {
+                return "Text must be 3 charaters or less."
+            } else {
+                return true
+            }
+        }
     },
 
     {
         type: 'input',
         name: 'textColor',
-        message: 'Please enter in fill color name. Hex code can be entered in place of color name',
+        message: 'Please enter in color keyword. Hexadecimal can be entered as well.',
     },
 
     {
@@ -26,7 +33,7 @@ inquirer
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'Please enter in a color keyword. Hexadecimal can be used as well.',
+        message: 'Please enter in a color keyword. Hexadecimal can be entered as well.',
     },
 
 ])
