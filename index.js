@@ -2,7 +2,8 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const shapes = require('lib/shapes.js')
 
-const questions = [
+inquirer
+    .prompt([
     {
         type: 'input',
         name: 'text',
@@ -28,4 +29,4 @@ const questions = [
         message: 'Please enter in a color keyword. Hexadecimal can be used as well.',
     },
 
-]
+])
