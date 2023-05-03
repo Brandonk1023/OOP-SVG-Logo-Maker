@@ -36,5 +36,21 @@ inquirer
         message: 'Please enter in a color keyword. Hexadecimal can be entered as well.',
     },
 
-])
+]) .then (({ text, textColor, shape, shapeColor}) => {
+    let createdShape;
+    switch (shape) {
+        case 'circle':
+            createdShape = new circle(text, textColor, shapeColor);
+            break;
+        case 'triangle':
+            createdShape = new triangle(text, textColor, shapeColor);
+            break;
+        case 'square':
+            createdShape = new square(text, textColor, shapeColor);
+            break;
+    }
+    
+    writeFile('.logo.svg', newShape.render(shapeColor, text, textColor));
+    console.log('shape file generated');
+}) .catch((err) => {console.log(err)})
 
